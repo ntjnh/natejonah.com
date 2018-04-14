@@ -1,1 +1,11 @@
-/* comment */
+@import "partials/variables";
+
+body {
+	font-family: $font-a;
+}
+
+h1, h2, h3, h4, h5, h6, nav, .btn {
+	font-family: $font-b;
+	font-weight: 300;
+	letter-spacing: 0.031em;
+}
