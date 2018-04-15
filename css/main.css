@@ -27,3 +27,29 @@ nav .nav__link {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.footer {
+  background-color: #0e69b1;
+  text-align: center;
+  padding: 1.25em 0;
+}
+.footer__list {
+  margin: 0;
+  padding: 0.5em 0;
+}
+.footer__list-item {
+  display: inline;
+  list-style: none;
+  margin: 0 0.313em;
+}
+.footer__link {
+  color: #fff;
+  font-size: 1.5em;
+}
+.footer__link:hover {
+  color: #000;
+}
+.footer__copyright {
+  margin: 0;
+  color: #fff;
+}
