@@ -8,6 +8,12 @@ h1, h2, h3, h4, h5, h6, nav, .btn {
   letter-spacing: 0.031em;
 }
 
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav {
   background-color: #0e69b1;
   padding: 1.3em 0;
