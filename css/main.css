@@ -35,6 +35,10 @@ nav .nav__link {
   text-decoration: none;
 }
 
+.about {
+  text-align: center;
+}
+
 .projects .project__screenshot {
   width: 100%;
 }
