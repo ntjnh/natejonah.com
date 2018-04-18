@@ -44,6 +44,9 @@ nav .nav__link {
   border: 2px solid #fff;
   box-shadow: 3px 3px 5px #ddd;
 }
+.about__text:nth-of-type(2) {
+  margin: 0;
+}
 
 .projects {
   padding: 3.5rem 0;
