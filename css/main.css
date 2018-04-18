@@ -35,8 +35,8 @@ nav .nav__link {
 }
 
 .about {
-  text-align: center;
   padding: 3.5rem 0;
+  text-align: center;
 }
 .about__photo {
   width: 250px;
