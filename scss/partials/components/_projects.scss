@@ -1,4 +1,5 @@
 .projects {
+	@include section-spacing;
 	.project {
 		&__screenshot {
 			width: 100%;

@@ -45,6 +45,9 @@ nav .nav__link {
   box-shadow: 3px 3px 5px #ddd;
 }
 
+.projects {
+  padding: 3.5rem 0;
+}
 .projects .project__screenshot {
   width: 100%;
 }
