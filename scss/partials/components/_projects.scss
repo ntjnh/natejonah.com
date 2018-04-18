@@ -2,6 +2,9 @@
 	@include section-spacing;
 	background-color: $blue-2;
   color: $white;
+  &__heading {
+    @include section-heading;
+  }
 	.project {
 		&__screenshot {
 			width: 100%;
