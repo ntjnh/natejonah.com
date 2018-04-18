@@ -1,6 +1,8 @@
 @import "partials/variables";
 @import "partials/mixins";
 
+@import "partials/utilities/container";
+
 body {
 	font-family: $font-a;
 }
