@@ -13,11 +13,6 @@ h1, h2, h3, h4, h5, h6, nav, .btn {
 	letter-spacing: 0.031em;
 }
 
-main {
-	@include centre-block;
-	width: 80%;
-}
-
 // Components
 @import "partials/components/nav";
 @import "partials/components/about";

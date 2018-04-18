@@ -1,3 +1,9 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -6,12 +12,6 @@ h1, h2, h3, h4, h5, h6, nav, .btn {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   letter-spacing: 0.031em;
-}
-
-main {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
 }
 
 nav {
