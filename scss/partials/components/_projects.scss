@@ -1,5 +1,6 @@
 .projects {
 	@include section-spacing;
+	background-color: $blue-2;
 	.project {
 		&__screenshot {
 			width: 100%;

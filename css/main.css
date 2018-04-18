@@ -47,6 +47,7 @@ nav .nav__link {
 
 .projects {
   padding: 3.5rem 0;
+  background-color: #06a5c8;
 }
 .projects .project__screenshot {
   width: 100%;
