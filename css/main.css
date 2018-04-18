@@ -38,6 +38,10 @@ nav .nav__link {
 .about {
   text-align: center;
 }
+.about__photo {
+  width: 250px;
+  height: auto;
+}
 
 .projects .project__screenshot {
   width: 100%;
