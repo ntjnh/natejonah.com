@@ -73,6 +73,9 @@ nav .nav__link {
 .blog__post-image {
   width: 100%;
 }
+.blog__post-description {
+  margin-top: 0;
+}
 
 .footer {
   background-color: #0e69b1;
