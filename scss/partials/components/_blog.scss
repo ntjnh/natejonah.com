@@ -1,4 +1,8 @@
 .blog {
+  @include section-spacing;
+  &__heading {
+    @include section-heading;
+  }
 	&__post {
 		&-image {
 			width: 100%;

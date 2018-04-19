@@ -62,6 +62,14 @@ nav .nav__link {
   width: 100%;
 }
 
+.blog {
+  padding: 3.5rem 0;
+}
+.blog__heading {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  text-align: center;
+}
 .blog__post-image {
   width: 100%;
 }
