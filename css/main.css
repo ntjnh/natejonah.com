@@ -76,6 +76,11 @@ nav .nav__link {
 .projects .project__screenshot {
   width: 100%;
 }
+.projects .project__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
 .projects .project__list {
   margin-top: 1.5em;
   padding-left: 0;
