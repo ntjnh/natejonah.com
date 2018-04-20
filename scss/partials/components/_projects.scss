@@ -6,6 +6,9 @@
     @include section-heading;
   }
 	.project {
+    &:not(:last-of-type) { 
+      margin-bottom: 3rem;
+    }
 		&__screenshot {
 			width: 100%;
 		}

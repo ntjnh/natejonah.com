@@ -73,6 +73,9 @@ nav .nav__link {
   margin-bottom: 3rem;
   text-align: center;
 }
+.projects .project:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
 .projects .project__screenshot {
   width: 100%;
 }
