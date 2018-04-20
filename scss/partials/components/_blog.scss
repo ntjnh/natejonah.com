@@ -11,5 +11,9 @@
     &-description {
       margin-top: 0;
     }
+    &-btn:hover {
+      background-color: $blue-2;
+      color: $white;
+    }
 	}
 }

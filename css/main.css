@@ -103,6 +103,10 @@ nav .nav__link {
 .blog__post-description {
   margin-top: 0;
 }
+.blog__post-btn:hover {
+  background-color: #06a5c8;
+  color: #fff;
+}
 
 .footer {
   background-color: #0e69b1;
