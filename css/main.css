@@ -76,6 +76,15 @@ nav .nav__link {
 .projects .project__screenshot {
   width: 100%;
 }
+.projects .project__list {
+  margin-top: 1.5em;
+  padding-left: 0;
+}
+.projects .project__list-item {
+  display: inline;
+  list-style: none;
+  margin-right: 0.4em;
+}
 
 .blog {
   padding: 3.5rem 0;
