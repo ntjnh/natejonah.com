@@ -91,6 +91,9 @@ nav .nav__link {
 .projects .project__description {
   margin: 0;
 }
+.projects .project__tech {
+  margin-bottom: 0;
+}
 .projects .project__list {
   padding-left: 0;
 }
