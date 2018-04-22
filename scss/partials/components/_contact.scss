@@ -1,5 +1,6 @@
 .contact {
   @include section-spacing;
+  background-color: $blue-2;
   &__heading {
     @include section-heading;
   }
