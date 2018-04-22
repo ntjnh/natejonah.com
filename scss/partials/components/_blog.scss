@@ -16,4 +16,14 @@
       color: $white;
     }
 	}
+  &__link {
+    @include centre-block;
+    display: block;
+    text-align: center;
+    background-color: $blue-2;
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+  }
 }

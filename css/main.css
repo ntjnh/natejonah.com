@@ -124,6 +124,17 @@ nav .nav__link {
   background-color: #06a5c8;
   color: #fff;
 }
+.blog__link {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  background-color: #06a5c8;
+}
+.blog__link:hover {
+  background-color: #0e69b1;
+  color: #fff;
+}
 
 .contact {
   padding: 3.5rem 0;
