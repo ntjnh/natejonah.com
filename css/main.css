@@ -125,6 +125,10 @@ nav .nav__link {
   color: #fff;
 }
 
+.contact {
+  padding: 3.5rem 0;
+}
+
 .footer {
   background-color: #0e69b1;
   text-align: center;
