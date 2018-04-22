@@ -1,3 +1,6 @@
 .contact {
   @include section-spacing;
+  &__heading {
+    @include section-heading;
+  }
 }
