@@ -5,4 +5,8 @@
   &__heading {
     @include section-heading;
   }
+  &__content {
+    line-height: 1.5em;
+    margin: 0;
+  }
 }
