@@ -151,7 +151,8 @@ nav .nav__link {
 }
 .contact__content {
   line-height: 1.5em;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 500px;
 }
 .contact__email-link {
   color: #fff;
