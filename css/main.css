@@ -84,6 +84,7 @@ nav .nav__link {
 }
 .projects .project p {
   display: inline-block;
+  width: 100%;
 }
 .projects .project:not(:last-of-type) {
   margin-bottom: 3rem;
