@@ -4,6 +4,7 @@
   color: $white;
   &-wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
   &__heading {
     @include section-heading;
@@ -37,6 +38,9 @@
         list-style: none;
         margin-right: 0.4em;
       }
+    }
+    @media (min-width: 768px) {
+      width: 50%;
     }
 	}
 }

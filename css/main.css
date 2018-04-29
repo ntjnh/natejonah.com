@@ -79,6 +79,7 @@ nav .nav__link {
 }
 .projects-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 .projects__heading {
   margin-top: 0;
@@ -113,6 +114,11 @@ nav .nav__link {
   display: inline;
   list-style: none;
   margin-right: 0.4em;
+}
+@media (min-width: 768px) {
+  .projects .project {
+    width: 50%;
+  }
 }
 
 .blog {
