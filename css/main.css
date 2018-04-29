@@ -77,6 +77,9 @@ nav .nav__link {
   background-color: #06a5c8;
   color: #fff;
 }
+.projects-wrapper {
+  display: flex;
+}
 .projects__heading {
   margin-top: 0;
   margin-bottom: 3rem;

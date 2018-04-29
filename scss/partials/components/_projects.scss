@@ -2,6 +2,9 @@
 	@include section-spacing;
 	background-color: $blue-2;
   color: $white;
+  &-wrapper {
+    display: flex;
+  }
   &__heading {
     @include section-heading;
   }
