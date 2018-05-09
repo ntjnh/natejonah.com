@@ -120,7 +120,8 @@ nav .nav__link {
 }
 @media (min-width: 768px) {
   .projects .project {
-    width: 50%;
+    width: 48%;
+    padding: 0 0.313rem;
   }
 }
 
