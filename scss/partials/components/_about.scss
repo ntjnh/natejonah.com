@@ -8,9 +8,9 @@
 		box-shadow: 3px 3px 5px #ddd;
 	}
   &__text {
+    @include centre-block;
     @media screen and (max-width: 576px) {
       max-width: 420px;
-      @include centre-block;
     }
   }
   &__text:nth-of-type(2) {
