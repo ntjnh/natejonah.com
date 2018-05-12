@@ -167,6 +167,12 @@ nav .nav__link {
   background-color: #06a5c8;
   color: #fff;
 }
+@media (min-width: 768px) {
+  .blog__post {
+    width: 48%;
+    padding: 0 0.313rem;
+  }
+}
 .blog__link {
   margin-left: auto;
   margin-right: auto;

@@ -23,6 +23,9 @@
       background-color: $blue-2;
       color: $white;
     }
+    @media (min-width: 768px) {
+      @include cols-2;
+    }
 	}
   &__link {
     @include centre-block;
