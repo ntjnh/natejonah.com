@@ -146,6 +146,10 @@ nav .nav__link {
   margin-bottom: 3rem;
   text-align: center;
 }
+.blog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 .blog__post {
   margin-bottom: 3rem;
 }

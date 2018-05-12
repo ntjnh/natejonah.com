@@ -3,6 +3,10 @@
   &__heading {
     @include section-heading;
   }
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 	&__post {
     margin-bottom: 3rem;
 		&-image {
