@@ -42,5 +42,8 @@
       background-color: $blue;
       color: $white;
     }
+    @media (min-width: 768px) {
+      width: 30%;
+    }
   }
 }

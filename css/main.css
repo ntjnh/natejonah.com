@@ -195,6 +195,11 @@ nav .nav__link {
   background-color: #0e69b1;
   color: #fff;
 }
+@media (min-width: 768px) {
+  .blog__link {
+    width: 30%;
+  }
+}
 
 .contact {
   padding: 3.5rem 0;
