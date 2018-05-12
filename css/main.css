@@ -173,6 +173,11 @@ nav .nav__link {
     padding: 0 0.313rem;
   }
 }
+@media (min-width: 992px) {
+  .blog__post {
+    padding: 0 0.5rem;
+  }
+}
 .blog__link {
   margin-left: auto;
   margin-right: auto;

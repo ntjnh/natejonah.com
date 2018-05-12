@@ -26,6 +26,9 @@
     @media (min-width: 768px) {
       @include cols-2;
     }
+    @media (min-width: 992px) {
+      padding: 0 0.5rem;
+    }
 	}
   &__link {
     @include centre-block;
