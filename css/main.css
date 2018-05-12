@@ -124,6 +124,11 @@ nav .nav__link {
     padding: 0 0.313rem;
   }
 }
+@media (min-width: 992px) {
+  .projects .project {
+    padding: 0 0.5rem;
+  }
+}
 
 .blog {
   padding: 3.5rem 0;
