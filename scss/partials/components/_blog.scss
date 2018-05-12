@@ -29,6 +29,9 @@
     @media (min-width: 992px) {
       padding: 0 0.5rem;
     }
+    @media (min-width: 1200px) {
+      @include cols-3;
+    }
 	}
   &__link {
     @include centre-block;
