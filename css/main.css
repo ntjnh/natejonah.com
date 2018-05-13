@@ -123,7 +123,7 @@ nav .nav__link {
 @media (min-width: 768px) {
   .projects .project {
     width: 48%;
-    padding: 0 0.313rem;
+    padding: 0 0.4rem;
   }
 }
 @media (min-width: 992px) {
@@ -173,7 +173,7 @@ nav .nav__link {
 @media (min-width: 768px) {
   .blog__post {
     width: 48%;
-    padding: 0 0.313rem;
+    padding: 0 0.4rem;
   }
 }
 @media (min-width: 992px) {
