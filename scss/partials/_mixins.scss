@@ -22,3 +22,9 @@
   width: 32%;
   padding: 0 0.4rem;
 }
+
+@mixin font-secondary {
+  font-family: $font-b;
+	font-weight: 300;
+	letter-spacing: 0.031em;
+}
