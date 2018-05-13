@@ -162,6 +162,9 @@ nav .nav__link {
 }
 .blog__post-description {
   margin-top: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.031em;
 }
 .blog__post-btn:hover {
   background-color: #06a5c8;

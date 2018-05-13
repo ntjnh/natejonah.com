@@ -18,6 +18,7 @@
     }
     &-description {
       margin-top: 0;
+      @include font-secondary;
     }
     &-btn:hover {
       background-color: $blue-2;
