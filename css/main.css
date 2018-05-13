@@ -5,15 +5,15 @@
 }
 
 .btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.031em;
   display: inline-block;
   background-color: #0e69b1;
   color: #fff;
   text-decoration: none;
   padding: 0.5em 1em;
   border-radius: 1em;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.031em;
 }
 .btn:hover {
   background-color: #fff;
@@ -24,7 +24,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, nav, .btn {
+h1, h2, h3, h4, h5, h6, nav {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   letter-spacing: 0.031em;
