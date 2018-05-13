@@ -178,7 +178,7 @@ nav .nav__link {
 }
 @media (min-width: 992px) {
   .blog__post {
-    padding: 0 0.5rem;
+    padding: 0 0.6rem;
   }
 }
 @media (min-width: 1200px) {
