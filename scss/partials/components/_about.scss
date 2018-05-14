@@ -1,6 +1,10 @@
 .about {
 	@include section-spacing;
-	text-align: center;
+  text-align: center;
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 	&__photo {
 		width: 250px;
 		height: auto;

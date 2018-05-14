@@ -54,6 +54,10 @@ nav .nav__link {
   padding: 3.5rem 0;
   text-align: center;
 }
+.about__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 .about__photo {
   width: 250px;
   height: auto;
