@@ -21,6 +21,17 @@
   }
   &__text-wrapper {
     @include centre-block;
+    @media screen and (min-width: 768px) {
+      width: 70%;
+      box-sizing: border-box;
+    }
+  }
+  &__heading,
+  &__sub-heading,
+  &__text {
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   &__text {
     @include centre-block;

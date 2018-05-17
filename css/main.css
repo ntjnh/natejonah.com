@@ -79,6 +79,17 @@ nav .nav__link {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .about__text-wrapper {
+    width: 70%;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__heading, .about__sub-heading, .about__text {
+    text-align: left;
+  }
+}
 .about__text {
   margin-left: auto;
   margin-right: auto;
