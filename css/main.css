@@ -58,11 +58,26 @@ nav .nav__link {
   display: flex;
   flex-wrap: wrap;
 }
+.about__photo-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .about__photo-wrapper {
+    width: 30%;
+    padding-right: 1.875rem;
+    box-sizing: border-box;
+  }
+}
 .about__photo {
   width: 250px;
   height: auto;
   border: 2px solid #fff;
   box-shadow: 3px 3px 5px #ddd;
+}
+.about__text-wrapper {
+  margin-left: auto;
+  margin-right: auto;
 }
 .about__text {
   margin-left: auto;
