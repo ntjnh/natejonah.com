@@ -22,6 +22,9 @@
   }
   &__text-wrapper {
     @include centre-block;
+    @media screen and (max-width: 767px) {
+      margin-top: 1.65rem;
+    }
     @media screen and (min-width: 768px) {
       width: 70%;
       box-sizing: border-box;
