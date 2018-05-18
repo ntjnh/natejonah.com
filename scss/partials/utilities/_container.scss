@@ -1,4 +1,5 @@
 .container {
 	@include centre-block;
 	width: 85%;
+	max-width: 1050px;
 }
