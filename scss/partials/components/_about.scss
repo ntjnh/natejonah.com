@@ -1,5 +1,6 @@
 .about {
-	@include section-spacing;
+  @include centre-block;
+  padding: 5rem 0;
   text-align: center;
   max-width: 1050px;
   &__wrapper {
