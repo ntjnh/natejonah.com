@@ -262,16 +262,35 @@ nav .nav__link {
   padding: 3.5rem 0;
   background-color: #06a5c8;
   color: #fff;
+  text-align: center;
 }
 .contact__heading {
   margin-top: 0;
   margin-bottom: 3rem;
   text-align: center;
 }
+.contact__list {
+  margin: 0 0 1rem 0;
+  padding: 0.5em 0;
+  display: inline-block;
+}
+.contact__list-item {
+  display: inline;
+  list-style: none;
+  margin: 0 0.313em;
+}
+.contact__link {
+  color: #fff;
+  font-size: 1.5em;
+}
+.contact__link:hover {
+  color: #000;
+}
 .contact__content {
   line-height: 1.5em;
   margin: 0 auto;
   max-width: 500px;
+  text-align: left;
 }
 .contact__email-link {
   color: #fff;
@@ -287,22 +306,6 @@ nav .nav__link {
   background-color: #0e69b1;
   text-align: center;
   padding: 1.25em 0;
-}
-.footer__list {
-  margin: 0;
-  padding: 0.5em 0;
-}
-.footer__list-item {
-  display: inline;
-  list-style: none;
-  margin: 0 0.313em;
-}
-.footer__link {
-  color: #fff;
-  font-size: 1.5em;
-}
-.footer__link:hover {
-  color: #000;
 }
 .footer__copyright {
   margin: 0;
