@@ -50,6 +50,9 @@ nav .nav__link {
   text-transform: uppercase;
   text-decoration: none;
 }
+nav .nav__link:hover {
+  color: #07FFE8;
+}
 
 .about {
   margin-left: auto;
