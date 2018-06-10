@@ -10,13 +10,17 @@
     @include section-heading;
   }
 	.project {
+    display: flex;
     width: 100%;
+    margin-bottom: 3rem;
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
     & p {
       display: inline-block;
       width: 100%;
-    }
-    &:not(:last-of-type) {
-      margin-bottom: 3rem;
     }
 		&__screenshot {
 			width: 100%;
@@ -27,6 +31,7 @@
       letter-spacing: 0.1em;
     }
     &__description {
+      flex: 1 0 auto;
       margin: 0;
     }
     &__tech {
@@ -38,6 +43,17 @@
         display: inline;
         list-style: none;
         margin-right: 0.4em;
+      }
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+      @media (min-width: 768px) {
+        margin-bottom: 3rem;
+      }
+    }
+    &:nth-last-child(-n + 2) {
+      @media (min-width: 768px) and (max-width: 1199px) {
+        margin-bottom: 0;
       }
     }
     @media (min-width: 768px) {

@@ -146,14 +146,18 @@ nav .nav__link:hover {
   text-align: center;
 }
 .projects .project {
+  display: flex;
   width: 100%;
+  margin-bottom: 3rem;
+}
+.projects .project__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .projects .project p {
   display: inline-block;
   width: 100%;
-}
-.projects .project:not(:last-of-type) {
-  margin-bottom: 3rem;
 }
 .projects .project__screenshot {
   width: 100%;
@@ -164,6 +168,7 @@ nav .nav__link:hover {
   letter-spacing: 0.1em;
 }
 .projects .project__description {
+  flex: 1 0 auto;
   margin: 0;
 }
 .projects .project__tech {
@@ -176,6 +181,19 @@ nav .nav__link:hover {
   display: inline;
   list-style: none;
   margin-right: 0.4em;
+}
+.projects .project:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .projects .project:last-of-type {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .projects .project:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 768px) {
   .projects .project {
