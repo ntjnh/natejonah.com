@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ntjnh/natejonah.com#readme",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
   }
 }
