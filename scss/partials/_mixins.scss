@@ -1,30 +1,5 @@
 @mixin centre-block {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@mixin section-spacing {
-	padding: 3.5rem 0;
-}
-
-@mixin section-heading {
-  margin-top: 0;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-@mixin cols-2 {
-  width: 48%;
-  padding: 0 0.4rem;
-}
-
-@mixin cols-3 {
-  width: 31%;
-  padding: 0 0.7rem;
-}
-
-@mixin font-secondary {
-  font-family: $font-b;
-	font-weight: 300;
-	letter-spacing: 0.031em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
