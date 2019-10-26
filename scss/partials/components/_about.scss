@@ -39,4 +39,15 @@
             order: 1;
         }
     }
+
+    &__heading {
+        font-size: 3.5rem;
+        font-weight: $light;
+        line-height: 1.2;
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        font-weight: $light;
+    }
 }
