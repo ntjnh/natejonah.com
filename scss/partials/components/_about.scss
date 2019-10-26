@@ -33,6 +33,7 @@
         color: $white;
         display: flex;
         order: 2;
+        padding: 0 5rem;
 
         @media screen and (min-width: $desktop) {
             order: 1;
