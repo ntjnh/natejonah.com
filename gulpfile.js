@@ -1,4 +1,4 @@
-const { dest, series, src } = require("gulp");
+const { dest, series, src, watch } = require("gulp");
 const cleanCSS = require("gulp-clean-css");
 
 const sass = require("gulp-sass");
@@ -11,4 +11,6 @@ const styles = () => {
         .pipe(dest("css"));
 };
 
-exports.default = series(styles);
+const watchStyles = () => watch("scss/**/*.scss", styles);
+
+exports.default = series(styles, watchStyles);
