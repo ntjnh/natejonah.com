@@ -48,12 +48,15 @@
     }
 
     &__sub-heading {
-        margin: 0;
+        font-size: 1.875rem;
+        font-weight: $light;
+        margin: 0 0 1rem;
     }
 
     &__text {
         font-size: 1.25rem;
         font-weight: $light;
+        line-height: 1.75;
         margin: 0;
     }
 }
