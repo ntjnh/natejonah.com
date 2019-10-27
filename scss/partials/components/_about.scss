@@ -44,10 +44,16 @@
         font-size: 3.5rem;
         font-weight: $light;
         line-height: 1.2;
+        margin: 0;
+    }
+
+    &__sub-heading {
+        margin: 0;
     }
 
     &__text {
         font-size: 1.25rem;
         font-weight: $light;
+        margin: 0;
     }
 }
