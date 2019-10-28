@@ -6,3 +6,9 @@ $bold: 700;
 body {
     font-family: $font;
 }
+
+.section-heading {
+    font-size: 1.875rem;
+    font-weight: $light;
+    margin: 0;
+}
