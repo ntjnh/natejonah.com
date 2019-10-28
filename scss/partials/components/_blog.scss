@@ -1,0 +1,46 @@
+.blog {
+    &__heading {
+        @extend .section-heading;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__post {
+        padding: 1.25rem 0;
+
+        &-wrapper {
+
+        }
+
+        &-image {
+            display: none;
+        }
+
+        &-title {
+            font-size: 1.25rem;
+            font-weight: $light;
+            margin: 0;
+            padding-bottom: .5rem;
+        }
+
+        &-date {
+            margin: 0;
+            padding-bottom: 1rem;
+        }
+
+        &-description {
+            margin: 0;
+            padding-bottom: 1rem;
+        }
+
+        &-btn {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
