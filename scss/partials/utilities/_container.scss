@@ -14,10 +14,4 @@
             max-width: 960px;
         }
     }
-
-    @media screen and (min-width: $desktop-xl) {
-        & {
-            max-width: 1140px;
-        }
-    }
 }
