@@ -13,4 +13,8 @@ const styles = () => {
 
 const watchStyles = () => watch("scss/**/*.scss", styles);
 
-exports.default = series(styles, watchStyles);
+module.exports = {
+    default: series(styles, watchStyles),
+    sass: styles,
+    watch: watchStyles
+};
