@@ -1,0 +1,19 @@
+.button {
+    background-color: transparent;
+    border: 1px solid $red;
+    border-radius: 2rem;
+    color: $red;
+    display: inline-block;
+    font-size: .9rem;
+    font-weight: $regular;
+    letter-spacing: .75px;
+    padding: .5rem .75rem;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $red;
+        border-color: none;
+        color: $white;
+    }
+}
