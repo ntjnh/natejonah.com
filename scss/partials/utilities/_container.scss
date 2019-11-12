@@ -4,14 +4,10 @@
     width: 100%;
 
     @media screen and (min-width: $tablet) {
-        & {
-            max-width: 720px;
-        }
+        max-width: 720px;
     }
 
     @media screen and (min-width: $desktop) {
-        & {
-            max-width: 960px;
-        }
+        max-width: 960px;
     }
 }
