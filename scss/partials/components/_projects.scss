@@ -1,61 +1,43 @@
 .projects {
-    padding: 3rem 0;
+    padding: 2rem;
+    width: 100%;
+
+    @media screen and (min-width: $mobile) {
+        @include centre-block;
+        padding-left: 0;
+        padding-right: 0;
+        width: 75%;
+    }
 
     &__heading {
         @extend .section-heading;
     }
 
     .project {
-        display: flex;
-        padding: 1.5rem 0;
-
-        &__screenshot {
-            display: inline-block;
-            width: 25%;
-        }
-
-        &__wrapper {
-            padding: .5rem 1.5rem;
-            width: 75%;
-        }
+        padding: 1rem 0;
 
         &__title {
             font-size: 1.25rem;
             font-weight: $light;
             line-height: 1.75;
             margin: 0;
-            padding-bottom: 1rem;
-        }
-
-        &__description {
-            margin: 0;
             padding-bottom: .5rem;
         }
 
-        &__tech {
-            font-size: .75rem;
+        &__description {
+            font-weight: $light;
+            line-height: 1.5;
             margin: 0;
             padding-bottom: 1rem;
-            text-transform: uppercase;
         }
 
         &__list {
             margin: 0;
             padding-left: 0;
-        }
 
-        &__list-item {
-            display: inline-block;
-            list-style: none;
-        }
-
-        &__btn-view,
-        &__btn-repo {
-            padding-right: .5rem;
-            text-decoration: none;
-
-            &:hover {
-                color: $red;
+            &-item {
+                display: inline-block;
+                list-style: none;
             }
         }
     }
