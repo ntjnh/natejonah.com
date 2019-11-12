@@ -10,16 +10,12 @@
     }
 
     &__link {
-        color: $white;
+        color: $black;
         font-size: 1.5rem;
         padding-right: 1.5rem;
 
         &:hover {
             color: $red;
-        }
-
-        &--black {
-            color: $black;
         }
     }
 }
