@@ -1,6 +1,17 @@
 .blog {
+    padding: 2rem;
+    width: 100%;
+
+    @media screen and (min-width: $mobile) {
+        @include centre-block;
+        padding-left: 0;
+        padding-right: 0;
+        width: 75%;
+    }
+
     &__heading {
         @extend .section-heading;
+        padding-bottom: 2rem;
     }
 
     &__link {
@@ -10,37 +21,26 @@
     &__post {
         padding: 1.25rem 0;
 
-        &-wrapper {
-
-        }
-
-        &-image {
-            display: none;
-        }
-
         &-title {
-            font-size: 1.25rem;
-            font-weight: $light;
+            font-size: 1.5rem;
+            font-weight: $regular;
             margin: 0;
             padding-bottom: .5rem;
         }
 
         &-date {
+            font-weight: $light;
+            letter-spacing: .1rem;
             margin: 0;
-            padding-bottom: 1rem;
+            padding-bottom: .5rem;
+            text-transform: uppercase;
         }
 
         &-description {
+            font-weight: $light;
+            line-height: 1.5rem;
             margin: 0;
             padding-bottom: 1rem;
-        }
-
-        &-btn {
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
     }
 }
