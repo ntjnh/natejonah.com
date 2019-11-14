@@ -1,14 +1,35 @@
 .contact {
-    padding: 1.5rem 0;
+    padding: 2rem;
+    width: 100%;
+
+    @media screen and (min-width: $mobile) {
+        @include centre-block;
+        padding-left: 0;
+        padding-right: 0;
+        width: 75%;
+    }
 
     &__heading {
         @extend .section-heading;
     }
 
+    &__social {
+        text-align: left;
+    }
+
     &__content {
-        font-size: 1rem;
-        line-height: 1.5;
+        font-weight: $light;
+        line-height: 1.5rem;
         margin: 0;
         padding: 1rem 0;
+    }
+
+    &__email-link {
+        color: $red;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
