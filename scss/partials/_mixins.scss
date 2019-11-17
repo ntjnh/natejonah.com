@@ -4,6 +4,22 @@
     margin-right: auto;
 }
 
+@mixin section {
+    padding: 2rem;
+    width: 100%;
+
+    @media screen and (min-width: $mobile) {
+        @include centre-block;
+        padding-left: 0;
+        padding-right: 0;
+        width: 75%;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin: 0;
+    }
+}
+
 @mixin space-reset {
     margin: 0;
     padding: 0;
