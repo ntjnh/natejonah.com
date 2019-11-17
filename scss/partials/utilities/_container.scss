@@ -10,4 +10,14 @@
     @media screen and (min-width: $desktop) {
         max-width: 960px;
     }
+
+    &--page {
+        @include centre-block;
+        max-width: 960px;
+        width: 100%;
+
+        @media screen and (min-width: $tablet) {
+            display: flex;
+        }
+    }
 }
