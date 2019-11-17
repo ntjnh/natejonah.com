@@ -1,13 +1,5 @@
 .projects {
-    padding: 2rem;
-    width: 100%;
-
-    @media screen and (min-width: $mobile) {
-        @include centre-block;
-        padding-left: 0;
-        padding-right: 0;
-        width: 75%;
-    }
+    @include section;
 
     &__heading {
         @extend .section-heading;
