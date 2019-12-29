@@ -1,9 +1,0 @@
-.main {
-    @include space-reset;
-    display: inline-block;
-    width: 100%;
-
-    @media screen and (min-width: $tablet) {
-        width: 65%;
-    }
-}

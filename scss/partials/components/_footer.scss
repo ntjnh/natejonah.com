@@ -1,11 +1,9 @@
 .footer {
-    padding: 1.5rem 0;
-
-    &__copyright {
-        font-size: 1rem;
-        font-weight: $light;
-        line-height: 1.5;
-        margin: 0;
-        text-align: center;
-    }
+	background-color: $blue;
+	text-align: center;
+	padding: 1.25em 0;
+  &__copyright {
+  	margin: 0;
+  	color: $white;
+  }
 }

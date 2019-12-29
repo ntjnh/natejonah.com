@@ -1,25 +1,5 @@
 .container {
-    @include centre-block;
-    width: 100%;
-
-    @media screen and (min-width: $tablet) {
-        max-width: 720px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        max-width: 960px;
-    }
-
-    @media screen and (min-width: $desktop-xl) {
-        max-width: 1140px;
-    }
-
-    &--page {
-        @include centre-block;
-        width: 100%;
-
-        @media screen and (min-width: $tablet) {
-            display: flex;
-        }
-    }
+	@include centre-block;
+	width: 85%;
+	max-width: 1050px;
 }

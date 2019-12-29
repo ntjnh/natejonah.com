@@ -1,26 +1,30 @@
 @mixin centre-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-@mixin section {
-    @include centre-block;
-    padding: 2rem 0;
-    width: 75%;
-
-    @media screen and (min-width: $mobile) {
-        width: 70%;
-    }
-
-    @media screen and (min-width: $tablet) {
-        border-left: 1px solid $grey;
-        padding: 2rem;
-        width: 100%;
-    }
+@mixin section-spacing {
+	padding: 3.5rem 0;
 }
 
-@mixin space-reset {
-    margin: 0;
-    padding: 0;
+@mixin section-heading {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@mixin cols-2 {
+  width: 48%;
+  padding: 0 0.4rem;
+}
+
+@mixin cols-3 {
+  width: 31%;
+  padding: 0 0.7rem;
+}
+
+@mixin font-secondary {
+  font-family: $font-b;
+	font-weight: 300;
+	letter-spacing: 0.031em;
 }
