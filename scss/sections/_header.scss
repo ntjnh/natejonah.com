@@ -28,7 +28,7 @@
         }
     }
 
-    .about {
+    .header-content {
         @include align-content(center);
         @include flex-wrap(wrap);
         @include flexbox;
