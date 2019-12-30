@@ -58,5 +58,26 @@
                 font-size: 1.65rem;
             }
         }
+
+        .social {
+            margin: 0;
+            padding: ($space * 2) 0 0;
+
+            &__wrapper {
+                display: inline-block;
+                font-size: 1.25rem;
+                list-style-type: none;
+                padding-right: $space * 2;
+            }
+
+            &__link {
+                color: $white;
+                text-decoration: none;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
     }
 }
