@@ -19,6 +19,15 @@
         padding-bottom: $space * 5;
     }
 
+    &__link {
+        color: $red;
+        text-decoration: none;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
     &__wrapper {
         @include flexbox;
         @include flex-wrap(wrap);
