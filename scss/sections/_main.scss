@@ -5,7 +5,11 @@
 
     .nav {
         @include flexbox;
-        @include justify-content(flex-end);
+        @include justify-content(center);
+
+        @media (min-width: $mobile) {
+            @include justify-content(flex-end);
+        }
 
         &__list {
             margin: 0;
