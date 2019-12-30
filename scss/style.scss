@@ -1,2 +1,11 @@
+@import "config";
+
 // Normalize
 @import "node_modules/normalize-scss/sass/normalize/import-now";
+
+// Partials
+@import "flexbox";
+@import "typography";
+
+// Sections
+@import "sections/main";
