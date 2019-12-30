@@ -1,0 +1,26 @@
+.main {
+    background: $black url("../placeholder.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .nav {
+        @include flexbox;
+        @include justify-content(flex-end);
+
+        &__list {
+            margin: 0;
+            padding: 0;
+        }
+
+        &__list-item {
+            display: inline-block;
+            list-style: none;
+            padding: ($space * 2);
+        }
+
+        &__link {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
