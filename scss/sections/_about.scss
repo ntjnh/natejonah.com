@@ -1,0 +1,53 @@
+.about {
+    @include flexbox;
+    @include flex-wrap(wrap);
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: ($space * 8) ($space * 3) 0;
+    width: 100%;
+
+    @media (min-width: $tablet) {
+        @include flex-wrap(nowrap);
+        max-width: 720px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 960px;
+    }
+
+    &__column {
+        width: 100%;
+
+        @media (min-width: $tablet) {
+            width: 50%;
+        }
+    }
+
+    &__text-content {
+        padding-top: $space * 4;
+
+        @media (min-width: $tablet) {
+            padding: ($space * 2) 0 ($space * 2) ($space * 4);
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        line-height: 1.35rem;
+        margin: 0;
+        padding-bottom: $space * 2;
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    &__image {
+        border-radius: 4px;
+        width: 100%;
+    }
+}
