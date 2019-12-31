@@ -11,6 +11,10 @@
             @include justify-content(flex-end);
         }
 
+        @media (min-width: $tablet) {
+            padding-right: $space * 4;
+        }
+
         &__list {
             margin: 0;
             padding: 0;
@@ -20,11 +24,19 @@
             display: inline-block;
             list-style: none;
             padding: ($space * 2);
+
+            @media (min-width: $tablet) {
+                font-size: 1.125rem;
+            }
         }
 
         &__link {
             color: $white;
             text-decoration: none;
+
+            &:hover {
+                color: $black;
+            }
         }
     }
 
@@ -35,6 +47,10 @@
         @include justify-content(flex-start);
         height: calc(100% - 100px);
         padding-left: $space * 4;
+
+        @media (min-width: $tablet) {
+            padding-left: $space * 6;
+        }
 
         &__heading,
         &__subheading {
