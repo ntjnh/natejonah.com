@@ -1,11 +1,10 @@
 .projects {
     background-color: $super-light-grey;
-    padding: ($space * 8) ($space * 3);
+    padding: ($space * 8) ($space * 3) ($space * 4);
     text-align: center;
 
     @media (min-width: $tablet) {
-        padding-left: 0;
-        padding-right: 0;
+        padding: ($space * 8) 0 0;
     }
 
     &__heading {
@@ -43,35 +42,30 @@
         }
 
         @media (min-width: $desktop) {
-            @include flex-wrap(nowrap);
             max-width: 960px;
         }
 
         .project {
+            padding-bottom: $space * 4;
             width: 100%;
 
-            &:not(:last-child) {
-                padding-bottom: $space * 4;
-            }
-
             @media (min-width: $tablet) {
-                padding-bottom: 0;
-                width: 50%;
+                padding: 0 $space ($space * 6);
+                width: 47%;
             }
-            
-            @media (min-width: $desktop) {
-                width: 33%;
 
-                &:nth-child(2) {
-                    padding: 0 ($space * 6);
-                }
+            @media (min-width: $desktop) {
+                width: 30%;
             }
 
             &__image {
                 border-radius: 4px;
                 margin-bottom: $space * 4;
-                max-width: 335px;
                 width: 100%;
+
+                @media (min-width: $tablet) {
+                    max-width: 335px;
+                }
             }
 
             &__title {
