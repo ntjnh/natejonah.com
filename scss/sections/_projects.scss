@@ -1,6 +1,6 @@
 .projects {
     background-color: $super-light-grey;
-    padding: ($space * 8) ($space * 3) ($space * 4);
+    padding: ($space * 8) ($space * 3) ($space * 2);
     text-align: center;
 
     @media (min-width: $tablet) {
@@ -46,7 +46,7 @@
         }
 
         .project {
-            padding-bottom: $space * 4;
+            padding-bottom: $space * 6;
             width: 100%;
 
             @media (min-width: $tablet) {
