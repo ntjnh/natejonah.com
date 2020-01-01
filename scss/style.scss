@@ -1,0 +1,14 @@
+@import "config";
+
+// Normalize
+@import "node_modules/normalize-scss/sass/normalize/import-now";
+
+// Partials
+@import "flexbox";
+@import "typography";
+
+// Sections
+@import "sections/about";
+@import "sections/footer";
+@import "sections/header";
+@import "sections/projects";

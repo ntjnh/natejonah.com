@@ -1,0 +1,102 @@
+.header {
+    background: $black url("../../images/bg.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .nav {
+        @include flexbox;
+        @include justify-content(center);
+
+        @media (min-width: $mobile) {
+            @include justify-content(flex-end);
+        }
+
+        @media (min-width: $tablet) {
+            padding-right: $space * 4;
+        }
+
+        &__list {
+            margin: 0;
+            padding: 0;
+        }
+
+        &__list-item {
+            display: inline-block;
+            list-style: none;
+            padding: ($space * 2);
+
+            @media (min-width: $tablet) {
+                font-size: 1.125rem;
+            }
+        }
+
+        &__link {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    .header-content {
+        @include align-content(center);
+        @include flex-wrap(wrap);
+        @include flexbox;
+        @include justify-content(flex-start);
+        height: calc(100% - 100px);
+        padding-left: $space * 4;
+
+        @media (min-width: $tablet) {
+            padding-left: $space * 6;
+        }
+
+        &__heading,
+        &__subheading {
+            color: $white;
+            margin: 0;
+            width: 100%;
+        }
+
+        &__heading {
+            font-size: 2.25em;
+            font-weight: $regular;
+            line-height: 1.35em;
+            padding-bottom: $space;
+
+            @media (min-width: $tablet) {
+                font-size: 3rem;
+            }
+        }
+
+        &__subheading {
+            font-size: 1.4rem;
+
+            @media (min-width: $tablet) {
+                font-size: 1.65rem;
+            }
+        }
+
+        .social {
+            margin: 0;
+            padding: ($space * 2) 0 0;
+
+            &__wrapper {
+                display: inline-block;
+                font-size: 1.25rem;
+                list-style-type: none;
+                padding-right: $space * 2;
+            }
+
+            &__link {
+                color: $white;
+                text-decoration: none;
+
+                &:hover {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

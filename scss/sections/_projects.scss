@@ -1,0 +1,117 @@
+.projects {
+    background-color: $super-light-grey;
+    padding: ($space * 8) ($space * 3) ($space * 2);
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        padding: ($space * 8) 0 0;
+    }
+
+    &__heading {
+        font-size: 2rem;
+        line-height: 1.35rem;
+        margin: 0;
+        padding-bottom: $space * 3;
+    }
+
+    &__description {
+        font-size: 1.125rem;
+        margin: 0;
+        padding-bottom: $space * 5;
+    }
+
+    &__link {
+        color: $red;
+        text-decoration: none;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    &__wrapper {
+        @include flexbox;
+        @include flex-wrap(wrap);
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100%;
+
+        @media (min-width: $tablet) {
+            @include justify-content(space-around);
+            max-width: 720px;
+        }
+
+        @media (min-width: $desktop) {
+            max-width: 960px;
+        }
+
+        .project {
+            padding-bottom: $space * 6;
+            width: 100%;
+
+            @media (min-width: $tablet) {
+                padding: 0 $space ($space * 6);
+                width: 47%;
+            }
+
+            @media (min-width: $desktop) {
+                width: 30%;
+            }
+
+            &__image {
+                border-radius: 4px;
+                margin-bottom: $space * 4;
+                width: 100%;
+
+                @media (min-width: $tablet) {
+                    max-width: 335px;
+                }
+            }
+
+            &__title {
+                font-size: 1.35em;
+                line-height: 1.5em;
+                margin: 0;
+            }
+
+            &__info {
+                font-size: 1.125rem;
+                line-height: 1.875rem;
+                margin: 0;
+                padding: ($space * 3) 0;
+            }
+
+            &__buttons {
+                @include flexbox;
+                @include justify-content(center);
+                margin: 0 auto;
+                padding: 0 ($space * 1.5);
+            }
+
+            &__button {
+                background-color: transparent;
+                border: 1px solid $light-grey;
+                border-radius: 4px;
+                color: $grey;
+                cursor: pointer;
+                display: inline-block;
+                font-weight: $bold;
+                letter-spacing: 0.125em;
+                line-height: 2.75em;
+                padding: 0 ($space * 3);
+                text-align: center;
+                text-decoration: none;
+                text-indent: 0.125em;
+                text-transform: uppercase;
+
+                &:first-child {
+                    margin-right: $space;
+                }
+
+                &:hover {
+                    background-color: lighten($light-grey, 40%);
+                }
+            }
+        }
+    }
+}

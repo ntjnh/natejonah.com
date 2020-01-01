@@ -1,0 +1,169 @@
+// @include flexbox;
+@mixin flexbox {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+// @include inline-flex;
+@mixin inline-flex {
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+// @include flex-direction($args...);
+@mixin flex-direction($value: row) {
+    @if $value == row-reverse {
+        -moz-box-direction: reverse;
+        -moz-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-box-orient: horizontal;
+    } @else if $value == column {
+        -moz-box-direction: normal;
+        -moz-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+    } @else if $value == column-reverse {
+        -moz-box-direction: reverse;
+        -moz-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-box-orient: vertical;
+    } @else {
+        -moz-box-direction: normal;
+        -moz-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: horizontal;
+    }
+    -ms-flex-direction: $value;
+    -webkit-flex-direction: $value;
+    flex-direction: $value;
+}
+
+// @include flex-wrap($args...);
+@mixin flex-wrap($value: nowrap) {
+    // No Webkit/FF Box fallback.
+    -webkit-flex-wrap: $value;
+    @if $value == nowrap {
+        -ms-flex-wrap: none;
+    } @else {
+        -ms-flex-wrap: $value;
+    }
+    flex-wrap: $value;
+}
+
+// @include flex-flow($args...);
+@mixin flex-flow($values: (row nowrap)) {
+    // No Webkit/FF Box fallback.
+    -ms-flex-flow: $values;
+    -webkit-flex-flow: $values;
+    flex-flow: $values;
+}
+
+// @include order(2);
+@mixin order($int: 0) {
+    -moz-box-ordinal-group: $int + 1;
+    -ms-flex-order: $int;
+    -webkit-box-ordinal-group: $int + 1;
+    -webkit-order: $int;
+    order: $int;
+  }
+
+// @include flex-grow(3);
+@mixin flex-grow($int: 1) {
+    -moz-box-flex: $int;
+    -ms-flex: $int;
+    -webkit-box-flex: $int;
+    -webkit-flex-grow: $int;
+    flex-grow: $int;
+}
+
+// @include flex-shrink(3);
+@mixin flex-shrink($int: 0) {
+    -moz-flex-shrink: $int;
+    -ms-flex: $int;
+    -webkit-flex-shrink: $int;
+    flex-shrink: $int;
+}
+
+// @include flex-grow($args...);
+@mixin flex-basis($value: auto) {
+    -webkit-flex-basis: $value;
+    flex-basis: $value;
+}
+
+// @include justify-content($args...);
+@mixin justify-content($value: flex-start) {
+    @if $value == flex-start {
+        -moz-box-pack: start;
+        -ms-flex-pack: start;
+        -webkit-box-pack: start;
+    } @else if $value == flex-end {
+        -moz-box-pack: end;
+        -ms-flex-pack: end;
+        -webkit-box-pack: end;
+    } @else if $value == space-between {
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+        -webkit-box-pack: justify;
+    } @else if $value == space-around {
+        -ms-flex-pack: distribute;
+    } @else {
+        -moz-box-pack: $value;
+        -ms-flex-pack: $value;
+        -webkit-box-pack: $value;
+    }
+    -webkit-justify-content: $value;
+    justify-content: $value;
+}
+
+// @include align-items($args...);
+@mixin align-items($value: stretch) {
+    @if $value == flex-start {
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        -webkit-box-align: start;
+    } @else if $value == flex-end {
+        -moz-box-align: end;
+        -ms-flex-align: end;
+        -webkit-box-align: end;
+    } @else {
+        -moz-box-align: $value;
+        -ms-flex-align: $value;
+        -webkit-box-align: $value;
+    }
+    -webkit-align-items: $value;
+    align-items: $value;
+}
+
+// @include align-self($args...);
+@mixin align-self($value: auto) {
+    // No Webkit Box Fallback.
+    -webkit-align-self: $value;
+    @if $value == flex-start {
+        -ms-flex-item-align: start;
+    } @else if $value == flex-end {
+        -ms-flex-item-align: end;
+    } @else {
+        -ms-flex-item-align: $value;
+    }
+    align-self: $value;
+}
+
+// @include align-content($args...);
+@mixin align-content($value: stretch) {
+    // No Webkit Box Fallback.
+    -webkit-align-content: $value;
+    @if $value == flex-start {
+        -ms-flex-line-pack: start;
+    } @else if $value == flex-end {
+        -ms-flex-line-pack: end;
+    } @else {
+        -ms-flex-line-pack: $value;
+    }
+    align-content: $value;
+}

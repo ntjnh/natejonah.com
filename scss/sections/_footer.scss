@@ -1,0 +1,41 @@
+.footer {
+    background-color: $black;
+    color: $white;
+    padding: ($space * 8) 0;
+    text-align: center;
+
+    &__copyright,
+    &__email {
+        margin: 0;
+    }
+
+    &__email {
+        padding: $space 0;
+    }
+
+    .icons {
+        margin: 0;
+        padding: 0;
+    }
+
+    .icon {
+        &__wrapper {
+            display: inline-block;
+            font-size: 1.25rem;
+            list-style-type: none;
+
+            &:not(:last-child) {
+                padding-right: $space * 2;
+            }
+        }
+
+        &__link {
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+}
